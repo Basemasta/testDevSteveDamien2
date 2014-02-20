@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.stevedamien" >
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <uses-sdk
+            android:minSdkVersion="14"
+            android:targetSdkVersion="18" />
+        <activity
+            android:name="com.stevedamien.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.stevedamien.activities.DisplayGridActivity"
+            android:label="@string/title_activity_display_grid"
+            android:screenOrientation="landscape">
+        </activity>
+    </application>
+
+</manifest>

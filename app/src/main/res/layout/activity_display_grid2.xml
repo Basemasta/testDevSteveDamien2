@@ -1,0 +1,30 @@
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/container"
+        tools:context="com.stevedamien.activities.DisplayGridActivity"
+        tools:ignore="MergeRootFrame"
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+        <com.stevedamien.views.VScroll
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:layout_width="fill_parent"
+            android:fillViewport="true"
+            android:id="@+id/vScroll">
+            <com.stevedamien.views.HScroll
+                android:id="@+id/hScroll"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+            </com.stevedamien.views.HScroll>
+        </com.stevedamien.views.VScroll>
+
+        <LinearLayout
+            android:id="@+id/buttonArea"
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"></LinearLayout>
+
+    </LinearLayout>
