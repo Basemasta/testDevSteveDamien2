@@ -141,7 +141,7 @@ public class DisplayGridActivity extends Activity  {
                     }
                     else
                     {
-                        if(destX < currentX)
+                        if(destX < currentX && true)
                         {
                             ballView.setCurrentX(currentX-1.0f);
                             currentX-=1.0f;
